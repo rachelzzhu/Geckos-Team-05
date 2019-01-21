@@ -5,11 +5,12 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Reservations | Schrute Farms B&B</title>
+  <title>Reservations | Schrute Farms B&amp;B</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--CSS Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
@@ -65,8 +66,13 @@
       <div class="container">
       <h2>Submit a Reservation Request</h2>
 
+<<<<<<< HEAD
       
 <form class="needs-validation" novalidate action="/requests" method="POST">
+=======
+      {{!-- Stu removed the 'novalidate' keyword --}}
+<form class="needs-validation"  action="/requests" method="POST" id='resForm'>
+>>>>>>> upstream/master
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">First name</label>
@@ -88,7 +94,11 @@
         <div class="input-group-prepend">
         
         </div>
+<<<<<<< HEAD
         <input type="text" class="form-control" id="validationCustomUsername" name="email" placeholder="name@example.com" aria-describedby="inputGroupPrepend"
+=======
+        <input type="email" class="form-control" id="validationCustomUsername" name="email" placeholder="name@example.com" aria-describedby="inputGroupPrepend"
+>>>>>>> upstream/master
           required>
         <div class="invalid-feedback">
           Please provide a valid email address.
@@ -119,6 +129,7 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="agree" id="invalidCheck" name="agree" required>
@@ -130,15 +141,26 @@
       </div>
     </div>
   </div>
+=======
+>>>>>>> upstream/master
   <div id="arrive-container">
     <label for="arrivalDate">Arrival date:</label>
     <input class="inputBox form-control col-md-4 mb-3" type="date" id="arrival-date" name="arrivalDate" required>
   </div>
   
   <div id="depart-container">
+<<<<<<< HEAD
     <label for="depart-date">Departure date:</label>
     <input class="inputBox form-control col-md-4 mb-3" type="date" id="depart-date" name="departureDate" required>
+=======
+    <label for="departDate">Departure date:</label>
+    <span id="errorBox"><input class="inputBox form-control col-md-4 mb-3" type="date" id="depart-date" name="departureDate" required>
+    <div id="dateError" class='hideError'>Please enter valid dates</div></span>
+>>>>>>> upstream/master
   </div>
+
+ 
+
   <br>
         <div id="guests">
           
@@ -203,7 +225,11 @@
         </div>
         <div class="form-group">
           <div class="form-check">
+<<<<<<< HEAD
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+=======
+            <input class="form-check-input" type="checkbox" value="agree" id="invalidCheck" name="agree" required>
+>>>>>>> upstream/master
             <label class="form-check-label" for="invalidCheck">
               Agree to terms and conditions
             </label>
@@ -244,5 +270,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="/easter.js"></script>
+<<<<<<< HEAD
+=======
+  <script src="main.js"></script>
+>>>>>>> upstream/master
   </body>
 </html>
